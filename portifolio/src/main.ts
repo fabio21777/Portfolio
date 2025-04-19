@@ -4,7 +4,7 @@ import PrimeVue from 'primevue/config'
 import App from './App.vue'
 import router from './router'
 import { MotionPlugin } from '@vueuse/motion'
-import { themeOptions } from '@/themes/my-theme/theme'
+import { themeOptions } from '@/assets/themes/my-theme/theme'
 
 
 const app = createApp(App)

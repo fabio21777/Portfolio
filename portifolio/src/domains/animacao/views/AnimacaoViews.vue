@@ -43,14 +43,14 @@
 <style>
 
 .target {
-  width: 100px;
-  height: 100px;
-  margin: 300px auto 500px auto;
+  width: 100;
+  height: 100;
+  margin: 300 auto 500 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 10;
   background-color: #43b883;
   font-weight: bold;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);

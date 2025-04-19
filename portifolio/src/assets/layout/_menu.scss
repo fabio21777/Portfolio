@@ -1,6 +1,6 @@
 .layout-sidebar {
     position: fixed;
-    width: 300px;
+    width: 300;
     height: calc(100vh - 9rem);
     z-index: 999;
     overflow-y: auto;
@@ -14,9 +14,9 @@
     border-radius: var(--content-border-radius);
     padding: 0.5rem 1.5rem;
     box-shadow:
-        0px 3px 5px rgba(0, 0, 0, 0.02),
-        0px 0px 2px rgba(0, 0, 0, 0.05),
-        0px 1px 4px rgba(0, 0, 0, 0.08);
+        0 3px 5px rgba(0, 0, 0, 0.02),
+        0 0 2px rgba(0, 0, 0, 0.05),
+        0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .layout-menu {
@@ -92,10 +92,6 @@
             &:hover {
                 background-color: var(--surface-hover);
             }
-
-            &:focus {
-                @include focused-inset();
-            }
         }
 
         ul {
@@ -148,7 +144,7 @@
 
 .layout-submenu-enter-to,
 .layout-submenu-leave-from {
-    max-height: 1000px;
+    max-height: 1000;
 }
 
 .layout-submenu-leave-active {

@@ -26,7 +26,7 @@ const onSubmit = handleSubmit((values) => {
     email: values.email,
     password: values.password,
   };
-  const { data, error } =   AuthAPI.login(loginData);
+  AuthAPI.login(loginData);
   
 });
 </script>
@@ -37,7 +37,6 @@ const onSubmit = handleSubmit((values) => {
         <div style="border-radius: 56px; padding: 0.3rem; background: linear-gradient(180deg, var(--primary-color) 10%, rgba(33, 150, 243, 0) 30%)">
             <div class="w-full bg-surface-0 dark:bg-surface-900 py-20 px-8 sm:px-20" style="border-radius: 53px">
           <div class="text-center mb-8">
-            <!-- <img src="/demo/images/login/avatar.png" alt="Image" height="50" class="mb-4" /> -->
             <div class="text-surface-900 dark:text-surface-0 text-3xl font-medium mb-4">
               Bem vindo
             </div>
@@ -84,16 +83,7 @@ const onSubmit = handleSubmit((values) => {
 .text-red-500 {
   font-size: 0.875rem; /* Define o tamanho do texto de erro como menor */
 }
-.pi-eye {
-    transform: scale(1.6);
-    margin-right: 1rem;
-}
-
-.pi-eye-slash {
-    transform: scale(1.6);
-    margin-right: 1rem;
-}
 .background{
-  background-image: url('background.webp');
+  background-image: url('/asserts/background.png');
 }
 </style>

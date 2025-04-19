@@ -1,4 +1,4 @@
-import { useFetch} from '@vueuse/core'
+import { type AfterFetchContext, type BeforeFetchContext, type OnFetchErrorContext, useFetch } from '@vueuse/core'
 import environment from '../environment/local';
 import router from '@/router';
 
@@ -7,7 +7,7 @@ const BASE_URL =  environment.api;
 
 
 // Interceptor beforeFetch
-async function beforeFetchInterceptor({options, cancel }) {
+async function beforeFetchInterceptor({options, cancel }:BeforeFetchContext) {
   const myToken = "myToken"
   if (!myToken) {
     cancel()
@@ -24,14 +24,14 @@ async function beforeFetchInterceptor({options, cancel }) {
 }
 
 // Interceptor afterFetch
-function afterFetchInterceptor(ctx) {
+function afterFetchInterceptor(ctx:AfterFetchContext) {
   console.log('afterFetch')
   // Implementar lógica de modificação dos dados da resposta se necessário
   return ctx
 }
 
 // Interceptor onFetchError
-function onFetchErrorInterceptor(ctx) {
+function onFetchErrorInterceptor(ctx:OnFetchErrorContext) {
   console.log('onFetchError')
   // Implementar lógica de modificação dos dados e erro em caso de erro
   return ctx

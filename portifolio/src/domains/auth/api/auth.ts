@@ -1,5 +1,5 @@
 import {useCustomFetch} from '@/api/UseFetchInterceptors'
-import Login from '@/domains/auth/auth.ts'
+import type Login from '@/domains/auth/auth'
 
 export default class AuthAPI{
 
