@@ -1,20 +1,26 @@
 <template>
   <Menubar
+    class="menubar"
     :pt="{
       root: {
         style: {
           padding: '2rem',
-          background: 'inherit',
           border: 'none',
           borderRadius: '0',
           borderBottom: '1px solid var(--p-menubar-border-color)',
           justifyContent: 'center',
+          position: 'fixed',
+          top: '0',
+          left: '0',
+          right: '0',
+          zIndex: '1000',
+          boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
         },
       },
       itemLabel: (options) => ({
         style: {
           color: options.context.index === indexActive ? 'var(--primary-color)' : 'inherit',
-          fontSize: '1.3rem',
+          fontSize: '1.2rem',
         },
       }),
     }"
@@ -24,16 +30,10 @@
 
 <script setup>
 import { ref, onMounted, watch } from 'vue'
+import { useNavegacaoStore} from '@/stores/navegacao.js'
 
-const props = defineProps({
-  indexActiveChange: {
-    type: Number,
-    default: 0
-  }
-});
 
-// Definir o evento que será emitido
-const emit = defineEmits(['currentIndexSelect']);
+const navegacao = useNavegacaoStore();
 
 const isDarkTheme = ref(false);
 const indexActive = ref(0);
@@ -43,8 +43,6 @@ onMounted(() => {
   // Define o primeiro item como ativo por padrão
   if (items.value.length > 0) {
     items.value[0].class = 'p-focus';
-    // Emitir evento inicial
-    emit('currentIndexSelect', 0);
   }
 });
 
@@ -75,15 +73,17 @@ const updateItemClasses = (newIndex) => {
   indexActive.value = newIndex;
 
   // Emitir o evento com o novo índice
-  emit('currentIndexSelect', newIndex);
+  navegacao.setCurrentIndex(newIndex);
 };
 
-// Observar mudanças na prop indexActiveChange
-watch(() => props.indexActiveChange, (newIndex) => {
-  updateItemClasses(newIndex);
+// Observar mudanças na propriedade do store navegacao.currentIndex
+
+watch(() => navegacao.currentIndex, (newIndex) => {
+  if (newIndex !== undefined && newIndex !== null) {
+    updateItemClasses(newIndex);
+  }
 });
 
-// Manipular evento de clique no menu
 const handleMenuClick = (event) => {
   const selectedItem = items.value.find(item => item.label === event.item.label);
   if (selectedItem) {

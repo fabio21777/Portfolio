@@ -13,4 +13,5 @@ import Page from '@/domains/portifolio/layout/Page.vue'
 
 <style scoped>
 
+
 </style>

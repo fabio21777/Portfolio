@@ -1,10 +1,11 @@
 <script setup lang="ts">
 
 import Header from '@/domains/portifolio/layout/Header.vue'
-
+import Footer from '@/domains/portifolio/layout/Footer.vue'
+import { ref } from 'vue';
 import Main from '@/domains/portifolio/layout/Main.vue'
 
-import Footer from '@/domains/portifolio/layout/Footer.vue'
+const currentIndex = ref(0);
 
 const handleIndexChange = (index) => {
   console.log('Índice atual selecionado:', index);
@@ -14,10 +15,20 @@ const handleIndexChange = (index) => {
 </script>
 
 <template>
+  <div class="page">
+    <Header />
+    <Main class="main" />
+    <Footer />
+  </div>
 
-  <Header @current-index-select="handleIndexChange" :index-active-change="0" />
-  <Main />
-  <Footer />
+
 
 </template>
 
+<style scoped>
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
+</style>
