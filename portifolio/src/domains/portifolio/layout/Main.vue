@@ -138,7 +138,7 @@ watch(() => store.currentIndex, (novoIndice) => {
 
     <!-- Seção Habilidades -->
     <section id="habilidades" ref="habilidades" class="min-h-screen flex items-center py-16">
-      <Habilidade></Habilidade>
+      <Habilidade v-motion-slide-visible-once-left ></Habilidade>
     </section>
 
     <!-- Seção Serviços -->
