@@ -3,4 +3,6 @@ interface Portforlio {
   linkedin: string;
   email: string;
   name: string;
+  firstName?: string;
+  aboutImage?: string;
 }
