@@ -22,8 +22,7 @@
           </p>
 
           <div class="mt-6">
-            <Button label="Meu Currículo" icon="pi pi-file-pdf" class="p-button-primary mr-3" />
-            <Button label="Contato" icon="pi pi-envelope" class="p-button-outlined" />
+            <Button @click="navegacao.setCurrentIndex(5)" label="Contato" icon="pi pi-envelope" class="p-button-outlined" />
           </div>
         </div>
       </div>
@@ -47,10 +46,11 @@
 <script setup lang="ts">
 import { usePortfolioStore } from '@/stores/portfolio';
 import { onMounted } from 'vue';
+import { useNavegacaoStore } from '@/stores/navegacao'
 
+const navegacao = useNavegacaoStore();
 const portfolio = usePortfolioStore();
-const portfolioInfo = portfolio.portfolioIndo; // Corrigido "portfolioIndo" para "portfolioInfo"
-
+const portfolioInfo = portfolio.portfolioIndo;
 // Você pode adicionar lógica adicional aqui se necessário
 onMounted(() => {
   // Qualquer inicialização necessária
