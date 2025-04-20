@@ -29,6 +29,7 @@
  1
 </div>
   <div class="target" v-motion-slide-visible-once-left>2</div>
+
   <div class="target"
     v-motion
     :initial="{ opacity: 0, y: 100 }"

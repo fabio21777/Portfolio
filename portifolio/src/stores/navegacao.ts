@@ -1,13 +1,20 @@
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useNavegacaoStore = defineStore('navegacao', () => {
 
-  const  currentIndex = ref(0)
+  const  correntIndex = ref(0)
+  const correntIndexScroll = ref(0);
 
   function setCurrentIndex(index: number) {
-    currentIndex.value = index
+    console.log(correntIndex)
+    correntIndex.value = index
   }
 
-  return { currentIndex, setCurrentIndex }
+  function setCurrentIndexScroll(index: number) {
+    console.log('scroll',correntIndexScroll.value)
+    correntIndexScroll.value = index
+  }
+
+  return { currentIndex: correntIndex, setCurrentIndex, correntIndexScroll, setCurrentIndexScroll }
 })

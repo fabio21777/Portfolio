@@ -8,7 +8,6 @@ import Main from '@/domains/portifolio/layout/Main.vue'
 const currentIndex = ref(0);
 
 const handleIndexChange = (index) => {
-  console.log('Índice atual selecionado:', index);
   // Faça algo com o índice
 };
 
@@ -25,10 +24,3 @@ const handleIndexChange = (index) => {
 
 </template>
 
-<style scoped>
-  .main {
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-  }
-</style>

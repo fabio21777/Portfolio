@@ -71,9 +71,6 @@ const updateItemClasses = (newIndex) => {
 
   // Atualizar o índice ativo
   indexActive.value = newIndex;
-
-  // Emitir o evento com o novo índice
-  navegacao.setCurrentIndex(newIndex);
 };
 
 // Observar mudanças na propriedade do store navegacao.currentIndex
@@ -84,11 +81,19 @@ watch(() => navegacao.currentIndex, (newIndex) => {
   }
 });
 
+// observa mudanças no índice auxiliar do scroll do mouse
+watch( () =>  navegacao.correntIndexScroll, (newIndex) => {
+  if (newIndex !== undefined && newIndex !== null) {
+    updateItemClasses(newIndex);
+  }
+});
+
 const handleMenuClick = (event) => {
   const selectedItem = items.value.find(item => item.label === event.item.label);
   if (selectedItem) {
     const newIndex = items.value.indexOf(selectedItem);
     updateItemClasses(newIndex);
+    navegacao.setCurrentIndex(newIndex);
   }
 };
 

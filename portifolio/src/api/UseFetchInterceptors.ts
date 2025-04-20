@@ -25,14 +25,12 @@ async function beforeFetchInterceptor({options, cancel }:BeforeFetchContext) {
 
 // Interceptor afterFetch
 function afterFetchInterceptor(ctx:AfterFetchContext) {
-  console.log('afterFetch')
   // Implementar lógica de modificação dos dados da resposta se necessário
   return ctx
 }
 
 // Interceptor onFetchError
 function onFetchErrorInterceptor(ctx:OnFetchErrorContext) {
-  console.log('onFetchError')
   // Implementar lógica de modificação dos dados e erro em caso de erro
   return ctx
 }
