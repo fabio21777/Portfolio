@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import Home from '@/domains/portifolio/views/components/Home.vue'
 import { useNavegacaoStore } from '@/stores/navegacao.js'
-import { reactive, useTemplateRef, watch, onMounted, ref } from 'vue'
+import { onMounted, reactive, ref, useTemplateRef, watch } from 'vue'
 import { useMouseInElement } from '@vueuse/core'
+import Habilidade from '@/domains/portifolio/views/components/Habilidade.vue'
 
 const store = useNavegacaoStore()
 
@@ -142,13 +143,7 @@ watch(() => store.currentIndex, (novoIndice) => {
 
     <!-- Seção Habilidades -->
     <section id="habilidades" ref="habilidades" class="min-h-screen flex items-center py-16">
-      <div class="w-full bg-gray-100 p-8 rounded-lg shadow-md">
-        <h2 class="text-3xl font-bold text-primary-600 mb-4">Habilidades</h2>
-        <p class="text-lg mb-4">Minhas habilidades técnicas e ferramentas que utilizo aparecerão aqui.</p>
-        <div class="h-64 bg-gray-200 flex items-center justify-center rounded">
-          <span class="text-gray-500">Conteúdo da seção Habilidades</span>
-        </div>
-      </div>
+      <Habilidade></Habilidade>
     </section>
 
     <!-- Seção Serviços -->
