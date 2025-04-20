@@ -7,7 +7,7 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../domains/AboutView.vue'),
-      meta: { requiresAuth: true } // se estiver autenticado, acessa a rotas protegidas
+      meta: { requiresAuth: false } // se estiver autenticado, acessa a rotas protegidas
       
     },
     {
