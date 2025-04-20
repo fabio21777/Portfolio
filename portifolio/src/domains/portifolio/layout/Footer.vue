@@ -23,13 +23,10 @@
               <a href="#" @click.prevent="navegacao.setCurrentIndex(2)" class="hover:text-primary-300 transition-colors">Habilidades</a>
             </li>
             <li>
-              <a href="#" @click.prevent="navegacao.setCurrentIndex(3)" class="hover:text-primary-300 transition-colors">Serviços</a>
+              <a href="#" @click.prevent="navegacao.setCurrentIndex(3)" class="hover:text-primary-300 transition-colors">Portifólio</a>
             </li>
             <li>
-              <a href="#" @click.prevent="navegacao.setCurrentIndex(4)" class="hover:text-primary-300 transition-colors">Portifólio</a>
-            </li>
-            <li>
-              <a href="#" @click.prevent="navegacao.setCurrentIndex(5)" class="hover:text-primary-300 transition-colors">Contato</a>
+              <a href="#" @click.prevent="navegacao.setCurrentIndex(4)" class="hover:text-primary-300 transition-colors">Contato</a>
             </li>
           </ul>
         </div>
