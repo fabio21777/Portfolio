@@ -48,7 +48,7 @@ onMounted(() => {
 
 const toggleTheme = () => {
   isDarkTheme.value = !isDarkTheme.value;
-  items.value[6].icon = isDarkTheme.value ? 'pi pi-sun' : 'pi pi-moon';
+  items.value[5].icon = isDarkTheme.value ? 'pi pi-sun' : 'pi pi-moon';
   document.documentElement.classList.toggle('my-app-dark');
 };
 
@@ -109,10 +109,6 @@ const items = ref([
   },
   {
     label: 'Habilidades',
-    command: handleMenuClick
-  },
-  {
-    label: 'Serviços',
     command: handleMenuClick
   },
   {

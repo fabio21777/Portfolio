@@ -22,7 +22,7 @@
           </p>
 
           <div class="mt-6">
-            <Button @click="navegacao.setCurrentIndex(5)" label="Contato" icon="pi pi-envelope" class="p-button-outlined" />
+            <Button @click="navegacao.setCurrentIndex(4)" label="Contato" icon="pi pi-envelope" class="p-button-outlined" />
           </div>
         </div>
       </div>

@@ -5,4 +5,5 @@ interface Portforlio {
   name: string;
   firstName?: string;
   aboutImage?: string;
+  portifolios?: [];
 }
