@@ -10,6 +10,15 @@ export const usePortfolioStore = defineStore('portfolio', () => {
     linkedin: 'https://linkedin.com/in/fabio-miranda-501937215',
     firstName: 'Fabio',
     portifolios:[
+
+      {
+        id: 0,
+        title: 'Portifolio',
+        description: 'Portifolio desenvolvido com Vue 3, Pinia e PrimeVue.',
+        hasImage: false,
+        github: 'https://github.com/fabio21777/Portfolio',
+      },
+
       {
         id: 1,
         title: 'Controle de Carga e Descarga',
@@ -17,7 +26,7 @@ export const usePortfolioStore = defineStore('portfolio', () => {
         image1: '/asserts/fribel-md.png',
         image2: '/asserts/fribel-app.png',
         demoLink: 'https://github.com/fabio21777/labes-fribel_alimentos',
-        hasImage: true,
+        hasImage: false,
       },
       {
         id: 2,
@@ -26,7 +35,7 @@ export const usePortfolioStore = defineStore('portfolio', () => {
         image1: '/asserts/yellow-md.png',
         image2: '/asserts/acessando-localhost.gif',
         demoLink: 'https://github.com/fabio21777/projeto-bioinformatica/tree/main',
-        hasImage: true,
+        hasImage: false,
       },
       {
         id: 3,
@@ -44,7 +53,7 @@ export const usePortfolioStore = defineStore('portfolio', () => {
         image1: '/asserts/md-itexto.png',
         image2: '/asserts/home.jpeg',
         demoLink: 'https://github.com/fabio21777/itexto',
-        hasImage: true
+        hasImage: false
       },
       {
         id: 5,
@@ -53,7 +62,7 @@ export const usePortfolioStore = defineStore('portfolio', () => {
         image1: '/asserts/home-git.png',
         image2: '/asserts/repositories.png',
         demoLink: 'https://github.com/fabio21777',
-        hasImage: true
+        hasImage: false
       }
     ]
   })
