@@ -5,7 +5,7 @@ const portifolioFabio = {
   linkedin: 'https://linkedin.com/in/fabio-miranda-501937215',
   firstName: 'Fabio',
   local: 'Belém - PA',
-  fotoPerfil: 'asserts/Lucille.webp',
+  fotoPerfil: 'asserts/foto-fabio.jpg',
   portifolios: [
     {
       id: 0,
@@ -79,7 +79,7 @@ const portifolioFabricio =
     linkedin: 'www.linkedin.com/in/fabricio-souza-771b321bb',
     firstName: 'Fabricio',
     local: 'Belém - PA',
-    fotoPerfil: 'asserts/elfo.png',
+    fotoPerfil: 'asserts/foto-fabio.jpg',
     portifolios: [
       {
         id: 0,

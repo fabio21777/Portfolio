@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary-500 px-20 py-10 relative text-white">
+  <div class="bg-primary-600 px-20 py-10 relative text-white">
     <div class="container mx-auto px-4 md:px-20">
       <div class="flex flex-col md:flex-row justify-evenly items-center gap-6">
         <!-- Name and title section -->

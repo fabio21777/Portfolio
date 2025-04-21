@@ -1,8 +1,8 @@
 <template>
   <div class="w-full py-16">
     <!-- Cabeçalho -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold mb-2">Portfólio</h1>
+    <div class="text-center mb-12 text-primary-600">
+      <h1 class="text-4xl font-bold text-primary-600 mb-2">Portfólio</h1>
       <p >Trabalhos mais recentes</p>
     </div>
 
@@ -85,8 +85,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import Carousel from 'primevue/carousel';
+import { ref } from 'vue'
+import Carousel from 'primevue/carousel'
 
 import { getInfoPortifolio } from '@/stores/portfolio'
 import { useRoute } from 'vue-router'

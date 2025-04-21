@@ -1,7 +1,7 @@
 <template>
   <div class="w-full max-w-3xl mx-auto p-6">
-    <div class="text-center mb-10">
-      <h1 class="text-4xl font-bold mb-2">{{ title }}</h1>
+    <div class="text-center text-primary-600 mb-10">
+      <h1 class="text-4xl text-primary-600 font-bold mb-2">{{ title }}</h1>
       <p class="text-lg">{{ subtitle }}</p>
     </div>
 
@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 import { getInfoPortifolio } from '@/stores/portfolio'
 import { useRoute } from 'vue-router'
 

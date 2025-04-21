@@ -1,8 +1,8 @@
 <template>
   <div class=" min-h-screen flex justify-center items-center p-4">
     <div class="w-full  rounded-lg shadow-md p-8">
-      <div class="text-center mb-8">
-        <h1 class="text-4xl font-bold mb-1">Sobre Mim</h1>
+      <div class="text-center mb-8 text-primary-600">
+        <h1 class="text-4xl font-bold text-primary-600 mb-1">Sobre Mim</h1>
         <p>Minha introdução</p>
       </div>
 

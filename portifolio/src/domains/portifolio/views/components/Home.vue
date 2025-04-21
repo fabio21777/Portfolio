@@ -31,7 +31,7 @@
       <div class="md:w-2/5 mt-6 md:mt-0">
         <div class="card flex justify-center shadow-lg rounded-lg overflow-hidden">
           <Image
-            src="https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg"
+            :src="portfolioInfo.fotoPerfil"
             alt="Foto de perfil"
             width="350"
             class="object-cover"
@@ -45,7 +45,7 @@
 
 <script setup lang="ts">
 import { getInfoPortifolio } from '@/stores/portfolio'
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
 import { useNavegacaoStore } from '@/stores/navegacao'
 import { useRoute } from 'vue-router'
 

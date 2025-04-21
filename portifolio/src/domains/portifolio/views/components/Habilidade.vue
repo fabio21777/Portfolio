@@ -91,10 +91,10 @@ const awsSkills = [
 <template>
   <div class="container mx-auto px-4 py-8">
     <!-- Título principal com destaque -->
-    <h2 class="text-3xl md:text-4xl font-bold text-primary-600 mb-2 tracking-tight">Habilidades</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-primary-600 text-center mb-2 tracking-tight">Habilidades</h2>
 
     <!-- Subtítulo com estilo complementar -->
-    <p class="text-lg mb-8 max-w-2xl">Tecnologias e frameworks com os quais tenho experiência</p>
+    <p class="text-lg mb-8 text-center text-primary-600">Tecnologias e frameworks com os quais tenho experiência</p>
 
     <!-- Container para os ícones das tecnologias -->
     <div class="">
