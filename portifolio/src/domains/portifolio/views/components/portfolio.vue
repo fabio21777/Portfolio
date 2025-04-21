@@ -3,7 +3,7 @@
     <!-- Cabeçalho -->
     <div class="text-center mb-12">
       <h1 class="text-4xl font-bold mb-2">Portfólio</h1>
-      <p class="text-gray-600">Trabalhos mais recentes</p>
+      <p >Trabalhos mais recentes</p>
     </div>
 
     <!-- Carrossel -->
