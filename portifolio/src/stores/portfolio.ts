@@ -145,7 +145,7 @@ const portifolioFabricio =
     ]
   }
 
-  let userNameGlobal = null;
+  let userNameGlobal :string | null = null;
 
   export const getInfoPortifolio = (userName: string | undefined |string[]) : any => {
   if((userName === undefined || userName === null || userName === '') && userNameGlobal == null ) {
