@@ -23,7 +23,7 @@
         <div class="w-full md:w-2/3">
           <div class="mb-6">
             <p class="mb-4">
-              Olá, meu nome é <span class="font-semibold">{{portfolio.portfolioIndo.firstName}}</span> e sou
+              Olá, meu nome é <span class="font-semibold">{{portfolioInfo.firstName}}</span> e sou
               apaixonado em criar coisas e desenvolver apps! Meu interesse em
               desenvolvimento web surgiu em 2021 com o desejo de criar meus próprios sites. Comecei com Django e Python, e com o tempo conheci SPAs (Single Page Applications) com Vue, que é
               minha tecnologia favorita para criar aplicações web. Contudo, trabalho ativamente com Angular TS e React. No mesmo período, conheci o Java e o Spring Boot, stacks que gosto muito e são as tecnologias em que tenho maior expertise para criação de APIs de backend. Essas ferramentas me ajudaram a entender melhor o funcionamento de aplicações web como um todo, desde a concepção dos modelos de dados até a criação da página final disponibilizada para o usuário.
@@ -59,10 +59,9 @@
 </template>
 
 <script setup lang="ts">
-import { usePortfolioStore } from '@/stores/portfolio'
+import { getInfoPortifolio } from '@/stores/portfolio'
 
-const portfolio = usePortfolioStore();
-const portfolioInfo = portfolio.portfolioIndo;
+const portfolioInfo = getInfoPortifolio();
 
 // Não são necessárias importações adicionais se o PrimeVue já estiver configurado no projeto
 </script>

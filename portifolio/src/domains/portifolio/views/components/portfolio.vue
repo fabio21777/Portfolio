@@ -88,13 +88,14 @@
 import { ref } from 'vue';
 import Carousel from 'primevue/carousel';
 
-import { usePortfolioStore } from '@/stores/portfolio';
+import { getInfoPortifolio } from '@/stores/portfolio'
 
-// Importando o store do portfólio
-const portfolio = usePortfolioStore();
 
 // Dados de exemplo para o portfólio
-const projects = ref(portfolio.portfolioIndo.portifolios);
+
+const portifolio = getInfoPortifolio()
+
+const projects = ref(portifolio.portifolios);
 
 // Configurações de responsividade para o carrossel
 const responsiveOptions = ref([

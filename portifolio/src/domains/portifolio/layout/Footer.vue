@@ -64,12 +64,11 @@
 </template>
 
 <script setup lang="ts">
-import { useNavegacaoStore } from '@/stores/navegacao';
-import { usePortfolioStore } from '@/stores/portfolio';
+import { useNavegacaoStore } from '@/stores/navegacao'
+import { getInfoPortifolio } from '@/stores/portfolio'
 
 const navegacao = useNavegacaoStore();
-const portfolio = usePortfolioStore();
-const portfolioInfo = portfolio.portfolioIndo;
+const portfolioInfo = getInfoPortifolio();
 
 // Função para voltar ao topo da página
 const voltarAoTopo = () => {

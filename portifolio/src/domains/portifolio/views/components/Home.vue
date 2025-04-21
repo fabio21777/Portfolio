@@ -44,13 +44,12 @@
 </template>
 
 <script setup lang="ts">
-import { usePortfolioStore } from '@/stores/portfolio';
+import { getInfoPortifolio } from '@/stores/portfolio'
 import { onMounted } from 'vue';
 import { useNavegacaoStore } from '@/stores/navegacao'
 
 const navegacao = useNavegacaoStore();
-const portfolio = usePortfolioStore();
-const portfolioInfo = portfolio.portfolioIndo;
+const portfolioInfo = getInfoPortifolio()
 // Você pode adicionar lógica adicional aqui se necessário
 onMounted(() => {
   // Qualquer inicialização necessária
