@@ -49,6 +49,14 @@ const portifolioFabio = {
       hasImage: false
     },
     {
+      id: 6,
+      title: 'Alura pic - Angular',
+      description: 'Sistema simples de postagem de fotos, onde o usuário pode postar fotos e comentar.',
+      demoLink: 'https://github.com/fabriciosouza21/alurapic-angular',
+      hasImage: false
+
+    },
+    {
       id: 5,
       title: 'Meu github',
       description: 'Meu github com diversos projetos de estudo e desenvolvimento.',
@@ -56,15 +64,8 @@ const portifolioFabio = {
       image2: '/asserts/repositories.png',
       demoLink: 'https://github.com/fabio21777',
       hasImage: false
-    },
-    {
-      id: 6,
-      title: 'Alura pic - Angular',
-      description: 'Sistema simples de postagem de fotos, onde o usuário pode postar fotos e comentar.',
-      demoLink: 'https://github.com/fabriciosouza21/alurapic-angular',
-      hasImage: false
-
     }
+
   ]
 }
 
@@ -99,7 +100,7 @@ const portifolioFabricio =
         image1: '/asserts/yellow-md.png',
         image2: '/asserts/acessando-localhost.gif',
         demoLink: 'https://github.com/fabriciosouza21/projeto-bioinformatica',
-        hasImage: true
+        hasImage: false
       },
       {
         id: 3,
@@ -121,24 +122,36 @@ const portifolioFabricio =
       },
       {
         id: 5,
-        title: 'Meu github',
-        description: 'Meu github com diversos projetos de estudo e desenvolvimento.',
-        image1: '/asserts/home-git.png',
-        image2: '/asserts/repositories.png',
-        demoLink: 'https://github.com/fabio21777',
-        hasImage: false
-      },
-      {
-        id: 6,
         title: 'Alura pic - Angular',
         description: 'Sistema simples de postagem de fotos, onde o usuário pode postar fotos e comentar.',
         demoLink: 'https://github.com/fabriciosouza21/alurapic-angular',
         hasImage: false
 
-      }
+      },
+      {
+        id: 6,
+        title: 'Meu github',
+        description: 'Meu github com diversos projetos de estudo e desenvolvimento.',
+        image1: '/asserts/home-git.png',
+        image2: '/asserts/repositories.png',
+        demoLink: 'https://github.com/fabriciosouza21',
+        hasImage: false
+      },
+
     ]
   }
 
-  export const getInfoPortifolio = () => {
-    return portifolioFabio
+  let userNameGlobal = null;
+
+  export const getInfoPortifolio = (userName: string) => {
+  if((userName === undefined || userName === null || userName === '') && userNameGlobal == null ) {
+    // escolher um portifólio padrão
+     userNameGlobal = Math.random() > 0.5 ? 'fabriciosouza21': 'fabio21777';
+  }
+
+  if(userNameGlobal !== null && (userName === undefined || userName === null || userName === '') ) {
+    userName = userNameGlobal;
+  }
+
+    return userName === 'fabriciosouza21' ? portifolioFabricio : portifolioFabio;
   }
