@@ -74,7 +74,7 @@ const portifolioFabio = {
 const portifolioFabricio =
   {
     name: 'Fabricio De Souza Miranda',
-    email: 'fabriciosouza21777@gmial.com',
+    email: 'fabriciosouza21777@gmail.com',
     github: 'https://github.com/fabriciosouza21',
     linkedin: 'https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile',
     firstName: 'Fabricio',
