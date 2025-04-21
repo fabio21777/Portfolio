@@ -31,11 +31,11 @@ const mouseContato = reactive(useMouseInElement(targetContato))
 const currentIndex = store.currentIndex
 
 const sections = [
-  { name: 'home', mouse: mouseHome, index: 0 },
-  { name: 'sobre', mouse: mouseSobre, index: 1 },
-  { name: 'habilidades', mouse: mouseHabilidades, index: 2 },
-  { name: 'portifolio', mouse: mousePortifolio, index: 3 },
-  { name: 'contato', mouse: mouseContato, index: 4 }
+  { name: 'home', mouse: mouseHome, index: 0,target: targetHome },
+  { name: 'sobre', mouse: mouseSobre, index: 1, target: targetSobre },
+  { name: 'habilidades', mouse: mouseHabilidades, index: 2, target: targetHabilidades },
+  { name: 'portifolio', mouse: mousePortifolio, index: 3, target: targetPortifolio },
+  { name: 'contato', mouse: mouseContato, index: 4, target: targetContato }
 ]
 
 // Configurar observadores para o mouse em cada seção
@@ -44,6 +44,11 @@ const configurarObservadoresMouse = () => {
     watch(() => section.mouse.isOutside, (isOutside) => {
       // Só atualiza o índice se não estiver em rolagem programática
       if (!isOutside && !isProgrammaticScrolling.value) {
+        //da foco html na seção correspondente pelo target
+        if (section.target && section.target.value) {
+          // Adiciona foco ao elemento (opcional)
+          section.target.value.focus({ preventScroll: true })
+          }
         store.setCurrentIndexScroll(section.index)
       }
     })
@@ -63,7 +68,7 @@ const configurarObservadorRolagem = () => {
     // Define um timeout para detectar quando a rolagem parou
     timeoutId = setTimeout(() => {
       isProgrammaticScrolling.value = false
-    }, 500) // Espera 500ms depois da última rolagem
+    }, 50) // Espera 500ms depois da última rolagem
   })
 }
 

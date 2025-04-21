@@ -13,6 +13,7 @@ export const useNavegacaoStore = defineStore('navegacao', () => {
 
   function setCurrentIndexScroll(index: number) {
     correntIndexScroll.value = index
+    correntIndex.value = -1;
   }
 
   return { currentIndex: correntIndex, setCurrentIndex, correntIndexScroll, setCurrentIndexScroll }

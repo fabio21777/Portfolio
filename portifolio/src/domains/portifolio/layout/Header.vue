@@ -76,7 +76,7 @@ const updateItemClasses = (newIndex) => {
 // Observar mudanças na propriedade do store navegacao.currentIndex
 
 watch(() => navegacao.currentIndex, (newIndex) => {
-  if (newIndex !== undefined && newIndex !== null) {
+  if (newIndex !== undefined && newIndex !== null && newIndex >= 0) {
     updateItemClasses(newIndex);
   }
 });
