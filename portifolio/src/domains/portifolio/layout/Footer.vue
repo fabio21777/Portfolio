@@ -66,9 +66,15 @@
 <script setup lang="ts">
 import { useNavegacaoStore } from '@/stores/navegacao'
 import { getInfoPortifolio } from '@/stores/portfolio'
+import { useRoute } from 'vue-router'
 
 const navegacao = useNavegacaoStore();
-const portfolioInfo = getInfoPortifolio();
+
+const route = useRoute();
+
+const userNameParam = route.params.userName;
+
+const portfolioInfo = getInfoPortifolio(userNameParam);
 
 // Função para voltar ao topo da página
 const voltarAoTopo = () => {

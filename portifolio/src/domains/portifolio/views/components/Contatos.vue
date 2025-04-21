@@ -56,6 +56,7 @@
 <script setup>
 import { ref } from 'vue';
 import { getInfoPortifolio } from '@/stores/portfolio'
+import { useRoute } from 'vue-router'
 
 // Props do componente
 const props = defineProps({
@@ -70,7 +71,12 @@ const props = defineProps({
 });
 
 // Informações de contato
-const portfolioInfo = getInfoPortifolio();
+
+const route = useRoute();
+
+const userNameParam = route.params.userName;
+
+const portfolioInfo = getInfoPortifolio(userNameParam);
 const contactInfo = ref({
   name: portfolioInfo.name,
   email: portfolioInfo.email,

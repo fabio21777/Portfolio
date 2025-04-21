@@ -5,6 +5,7 @@ const portifolioFabio = {
   linkedin: 'https://linkedin.com/in/fabio-miranda-501937215',
   firstName: 'Fabio',
   local: 'Belém - PA',
+  fotoPerfil: 'asserts/Lucille.webp',
   portifolios: [
     {
       id: 0,
@@ -53,7 +54,7 @@ const portifolioFabio = {
       id: 6,
       title: 'Alura pic - Angular',
       description: 'Sistema simples de postagem de fotos, onde o usuário pode postar fotos e comentar.',
-      demoLink: 'https://github.com/fabriciosouza21/alurapic-angular',
+      demoLink: 'https://github.com/fabio21777/alura-pic-angular',
       hasImage: false
 
     },
@@ -74,9 +75,11 @@ const portifolioFabricio =
   {
     name: 'Fabricio De Souza Miranda',
     email: 'fabriciosouza21777@gmial.com',
-    github: 'https://github.com/fabricio21777',
+    github: 'https://github.com/fabriciosouza21',
     linkedin: 'www.linkedin.com/in/fabricio-souza-771b321bb',
     firstName: 'Fabricio',
+    local: 'Belém - PA',
+    fotoPerfil: 'asserts/elfo.png',
     portifolios: [
       {
         id: 0,
@@ -142,9 +145,9 @@ const portifolioFabricio =
     ]
   }
 
-  let userNameGlobal = null;
+  let userNameGlobal = 'fabio21777';
 
-  export const getInfoPortifolio = (userName: string) => {
+  export const getInfoPortifolio = (userName: string | undefined |string[]) : any => {
   if((userName === undefined || userName === null || userName === '') && userNameGlobal == null ) {
     // escolher um portifólio padrão
      userNameGlobal = Math.random() > 0.5 ? 'fabriciosouza21': 'fabio21777';

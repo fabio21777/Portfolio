@@ -32,6 +32,11 @@ const router = createRouter({
       component: () => import('../domains/portifolio/views/PortifolioViews.vue'),
     },
     {
+      path: '/portifolio/:userName',
+      name: 'portifolioUser',
+      component: () => import('../domains/portifolio/views/PortifolioViews.vue'),
+    },
+    {
       path: '/',
       name: 'portifolio',
       component: () => import('../domains/portifolio/views/PortifolioViews.vue'),

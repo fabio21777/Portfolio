@@ -89,11 +89,16 @@ import { ref } from 'vue';
 import Carousel from 'primevue/carousel';
 
 import { getInfoPortifolio } from '@/stores/portfolio'
+import { useRoute } from 'vue-router'
 
 
 // Dados de exemplo para o portfólio
 
-const portifolio = getInfoPortifolio()
+const route = useRoute();
+
+const userNameParam = route.params.userName;
+
+const portifolio = getInfoPortifolio(userNameParam)
 
 const projects = ref(portifolio.portifolios);
 

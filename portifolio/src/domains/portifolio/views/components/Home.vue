@@ -47,9 +47,15 @@
 import { getInfoPortifolio } from '@/stores/portfolio'
 import { onMounted } from 'vue';
 import { useNavegacaoStore } from '@/stores/navegacao'
+import { useRoute } from 'vue-router'
 
 const navegacao = useNavegacaoStore();
-const portfolioInfo = getInfoPortifolio()
+
+const route = useRoute();
+
+const userNameParam = route.params.userName;
+
+const portfolioInfo = getInfoPortifolio(userNameParam);
 // Você pode adicionar lógica adicional aqui se necessário
 onMounted(() => {
   // Qualquer inicialização necessária
