@@ -6,6 +6,7 @@ import { useMouseInElement } from '@vueuse/core'
 import Sobre from '@/domains/portifolio/views/components/Sobre.vue'
 import Portfolio from '@/domains/portifolio/views/components/portfolio.vue'
 import Habilidade from '@/domains/portifolio/views/components/Habilidade.vue'
+import Contatos from '@/domains/portifolio/views/components/Contatos.vue'
 
 const store = useNavegacaoStore()
 
@@ -136,18 +137,10 @@ watch(() => store.currentIndex, (novoIndice) => {
     </section>
     <!-- Seção Portifólio -->
     <section id="portifolio" ref="portifolio" class="flex items-center py-16">
-      <Portfolio></Portfolio>
+      <Portfolio v-motion-slide-visible-once-left></Portfolio>
     </section>
-
-    <!-- Seção Contato -->
-    <section id="contato" ref="contato" class="min-h-screen flex items-center py-16">
-      <div class="w-full bg-gray-100 p-8 rounded-lg shadow-md">
-        <h2 class="text-3xl font-bold text-primary-600 mb-4">Contato</h2>
-        <p class="text-lg mb-4">Informações de contato e formulário para mensagens aparecerão aqui.</p>
-        <div class="h-64 bg-gray-200 flex items-center justify-center rounded">
-          <span class="text-gray-500">Conteúdo da seção Contato</span>
-        </div>
-      </div>
+    <section id="contato" ref="contato" class="flex items-center py-16">
+      <Contatos v-motion-slide-visible-once-left></Contatos>
     </section>
   </div>
 </template>

@@ -1,9 +1,10 @@
 const portifolioFabio = {
   name: 'Fabio De Souza Miranda',
-  email: 'fabiosouza21777@gmial.com',
+  email: 'fabiosouza21777@gmail.com',
   github: 'https://github.com/fabio21777',
   linkedin: 'https://linkedin.com/in/fabio-miranda-501937215',
   firstName: 'Fabio',
+  local: 'Belém - PA',
   portifolios: [
     {
       id: 0,

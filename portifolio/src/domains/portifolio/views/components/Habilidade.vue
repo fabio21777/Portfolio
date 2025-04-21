@@ -94,7 +94,7 @@ const awsSkills = [
     <h2 class="text-3xl md:text-4xl font-bold text-primary-600 mb-2 tracking-tight">Habilidades</h2>
 
     <!-- Subtítulo com estilo complementar -->
-    <p class="text-lg text-gray-600 mb-8 max-w-2xl">Tecnologias e frameworks com os quais tenho experiência</p>
+    <p class="text-lg mb-8 max-w-2xl">Tecnologias e frameworks com os quais tenho experiência</p>
 
     <!-- Container para os ícones das tecnologias -->
     <div class="">
