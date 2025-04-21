@@ -6,13 +6,20 @@ const portifolioFabio = {
   firstName: 'Fabio',
   portifolios: [
     {
+      id: 0,
+      title: 'Portifólio',
+      description: 'Portifólio desenvolvido com Vue 3, TypeScript e Pinia.',
+      demoLink: 'https://github.com/fabio21777/Portfolio',
+      hasImage: false,
+    },
+    {
       id: 1,
       title: 'Controle de Carga e Descarga',
       description: 'Sistema para automatizar o processo de carga e descarga de mercadorias da Fribel Comércio de Alimentos Ltda(DJANGO).',
       image1: '/asserts/fribel-md.png',
       image2: '/asserts/fribel-app.png',
       demoLink: 'https://github.com/fabio21777/labes-fribel_alimentos',
-      hasImage: true
+      hasImage: false
     },
     {
       id: 2,
@@ -21,7 +28,7 @@ const portifolioFabio = {
       image1: '/asserts/yellow-md.png',
       image2: '/asserts/acessando-localhost.gif',
       demoLink: 'https://github.com/fabio21777/projeto-bioinformatica/tree/main',
-      hasImage: true
+      hasImage: false
     },
     {
       id: 3,
@@ -39,7 +46,7 @@ const portifolioFabio = {
       image1: '/asserts/md-itexto.png',
       image2: '/asserts/home.jpeg',
       demoLink: 'https://github.com/fabio21777/itexto',
-      hasImage: true
+      hasImage: false
     },
     {
       id: 5,
@@ -48,19 +55,26 @@ const portifolioFabio = {
       image1: '/asserts/home-git.png',
       image2: '/asserts/repositories.png',
       demoLink: 'https://github.com/fabio21777',
-      hasImage: true
+      hasImage: false
     }
   ]
 }
 
 const portifolioFabricio =
   {
-    name: 'Fabio De Souza Miranda',
-    email: 'fabiosouza21777@gmial.com',
-    github: 'https://github.com/fabio21777',
-    linkedin: 'https://linkedin.com/in/fabio-miranda-501937215',
-    firstName: 'Fabio',
+    name: 'Fabricio De Souza Miranda',
+    email: 'fabriciosouza21777@gmial.com',
+    github: 'https://github.com/fabricio21777',
+    linkedin: 'www.linkedin.com/in/fabricio-souza-771b321bb',
+    firstName: 'Fabricio',
     portifolios: [
+      {
+        id: 0,
+        title: 'Portifólio',
+        description: 'Portifólio desenvolvido com Vue 3, TypeScript e Pinia.',
+        demoLink: 'https://github.com/fabio21777/Portfolio',
+        hasImage: false,
+      },
       {
         id: 1,
         title: 'Controle de Carga e Descarga',
@@ -68,7 +82,7 @@ const portifolioFabricio =
         image1: '/asserts/fribel-md.png',
         image2: '/asserts/fribel-app.png',
         demoLink: 'https://github.com/fabio21777/labes-fribel_alimentos',
-        hasImage: true
+        hasImage: false
       },
       {
         id: 2,
@@ -76,7 +90,7 @@ const portifolioFabricio =
         description: 'Plataforma web  para análise de dados genômicos de febre amarela funcionalidades Blast,JBrowse,Árvore Filogenética,Download dos dados (DJANGO)',
         image1: '/asserts/yellow-md.png',
         image2: '/asserts/acessando-localhost.gif',
-        demoLink: 'https://github.com/fabio21777/projeto-bioinformatica/tree/main',
+        demoLink: 'https://github.com/fabriciosouza21/projeto-bioinformatica',
         hasImage: true
       },
       {
@@ -85,7 +99,7 @@ const portifolioFabricio =
         description: 'Aplicativo web backend e front-end Crie um app inédito para seu portfólio com as tecnologias mais demandadas do mercado react e java ',
         image1: '',
         image2: '',
-        demoLink: 'https://github.com/fabio21777/projeto-sds3/tree/main',
+        demoLink: 'https://github.com/fabriciosouza21/sds4',
         hasImage: false
       },
       {
@@ -94,8 +108,8 @@ const portifolioFabricio =
         description: 'Teste técnico para a empresa itexto, onde desenvolvi uma aplicação de  listagem e busca de posts com react e java.',
         image1: '/asserts/md-itexto.png',
         image2: '/asserts/home.jpeg',
-        demoLink: 'https://github.com/fabio21777/itexto',
-        hasImage: true
+        demoLink: 'https://github.com/fabriciosouza21/itexto',
+        hasImage: false
       },
       {
         id: 5,
@@ -104,7 +118,7 @@ const portifolioFabricio =
         image1: '/asserts/home-git.png',
         image2: '/asserts/repositories.png',
         demoLink: 'https://github.com/fabio21777',
-        hasImage: true
+        hasImage: false
       }
     ]
   }
