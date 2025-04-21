@@ -76,7 +76,7 @@ const portifolioFabricio =
     name: 'Fabricio De Souza Miranda',
     email: 'fabriciosouza21777@gmial.com',
     github: 'https://github.com/fabriciosouza21',
-    linkedin: 'www.linkedin.com/in/fabricio-souza-771b321bb',
+    linkedin: 'https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile',
     firstName: 'Fabricio',
     local: 'Belém - PA',
     fotoPerfil: '/asserts/foto-fabricio.jpg',
