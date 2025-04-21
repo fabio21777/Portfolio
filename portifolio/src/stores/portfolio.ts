@@ -56,6 +56,14 @@ const portifolioFabio = {
       image2: '/asserts/repositories.png',
       demoLink: 'https://github.com/fabio21777',
       hasImage: false
+    },
+    {
+      id: 6,
+      title: 'Alura pic - Angular',
+      description: 'Sistema simples de postagem de fotos, onde o usuário pode postar fotos e comentar.',
+      demoLink: 'https://github.com/fabriciosouza21/alurapic-angular',
+      hasImage: false
+
     }
   ]
 }
@@ -119,6 +127,14 @@ const portifolioFabricio =
         image2: '/asserts/repositories.png',
         demoLink: 'https://github.com/fabio21777',
         hasImage: false
+      },
+      {
+        id: 6,
+        title: 'Alura pic - Angular',
+        description: 'Sistema simples de postagem de fotos, onde o usuário pode postar fotos e comentar.',
+        demoLink: 'https://github.com/fabriciosouza21/alurapic-angular',
+        hasImage: false
+
       }
     ]
   }
