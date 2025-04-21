@@ -51,7 +51,7 @@
       </div>
 
       <!-- Botão para voltar ao topo fixo -->
-      <div class="fixed bottom-10 right-10">
+      <div v-if="navegacao.correntIndexScroll > 0" class="fixed bottom-10 right-10">
         <button
           @click="voltarAoTopo"
           class="bg-white text-primary-600 rounded-full p-3 shadow-lg hover:bg-primary-100 transition-colors duration-300"

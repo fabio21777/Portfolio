@@ -7,12 +7,11 @@ export const useNavegacaoStore = defineStore('navegacao', () => {
   const correntIndexScroll = ref(0);
 
   function setCurrentIndex(index: number) {
-    console.log(correntIndex)
     correntIndex.value = index
+    correntIndexScroll.value = index
   }
 
   function setCurrentIndexScroll(index: number) {
-    console.log('scroll',correntIndexScroll.value)
     correntIndexScroll.value = index
   }
 
