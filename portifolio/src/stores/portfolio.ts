@@ -151,7 +151,6 @@ const portifolioFabricio =
   if((userName === undefined || userName === null || userName === '') && userNameGlobal == null ) {
     // escolher um portifólio padrão
      userNameGlobal = Math.random() > 0.5 ? 'fabriciosouza21': 'fabio21777';
-     console.log(userNameGlobal);
   }
 
   if(userNameGlobal !== null && (userName === undefined || userName === null || userName === '') ) {
