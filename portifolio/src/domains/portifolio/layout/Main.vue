@@ -57,7 +57,7 @@ const configurarObservadoresMouse = () => {
 
 // Adicionar listener de rolagem
 const configurarObservadorRolagem = () => {
-  let timeoutId: number | null = null;
+  let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
   window.addEventListener('scroll', () => {
     // Limpa o timeout anterior se existir
