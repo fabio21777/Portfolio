@@ -5,7 +5,7 @@ const portifolioFabio = {
   linkedin: 'https://linkedin.com/in/fabio-miranda-501937215',
   firstName: 'Fabio',
   local: 'Belém - PA',
-  fotoPerfil: 'asserts/foto-fabio.jpg',
+  fotoPerfil: '/asserts/foto-fabio.jpg',
   portifolios: [
     {
       id: 0,
@@ -79,7 +79,7 @@ const portifolioFabricio =
     linkedin: 'www.linkedin.com/in/fabricio-souza-771b321bb',
     firstName: 'Fabricio',
     local: 'Belém - PA',
-    fotoPerfil: 'asserts/foto-fabio.jpg',
+    fotoPerfil: '/asserts/foto-fabricio.jpg',
     portifolios: [
       {
         id: 0,
@@ -145,12 +145,13 @@ const portifolioFabricio =
     ]
   }
 
-  let userNameGlobal = 'fabio21777';
+  let userNameGlobal = null;
 
   export const getInfoPortifolio = (userName: string | undefined |string[]) : any => {
   if((userName === undefined || userName === null || userName === '') && userNameGlobal == null ) {
     // escolher um portifólio padrão
      userNameGlobal = Math.random() > 0.5 ? 'fabriciosouza21': 'fabio21777';
+     console.log(userNameGlobal);
   }
 
   if(userNameGlobal !== null && (userName === undefined || userName === null || userName === '') ) {
