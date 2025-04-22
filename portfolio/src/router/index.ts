@@ -27,19 +27,19 @@ const router = createRouter({
       redirect: { name: 'portifolio' }
     },
     {
-      path: '/portifolio',
-      name: 'portifolio',
-      component: () => import('../domains/portifolio/views/PortifolioViews.vue'),
+      path: '/portfolio',
+      name: 'portfolio',
+      component: () => import('../domains/portfolio/views/PortfolioViews.vue'),
     },
     {
-      path: '/portifolio/:userName',
+      path: '/portfolio/:userName',
       name: 'portifolioUser',
-      component: () => import('../domains/portifolio/views/PortifolioViews.vue'),
+      component: () => import('../domains/portfolio/views/PortfolioViews.vue'),
     },
     {
       path: '/',
-      name: 'portifolio',
-      component: () => import('../domains/portifolio/views/PortifolioViews.vue'),
+      name: 'portfolio',
+      component: () => import('../domains/portfolio/views/PortfolioViews.vue'),
     }
   ]
 })

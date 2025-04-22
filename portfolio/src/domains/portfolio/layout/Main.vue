@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import Home from '@/domains/portifolio/views/components/Home.vue'
+import Home from '@/domains/portfolio/views/components/Home.vue'
 import { useNavegacaoStore } from '@/stores/navegacao.js'
 import { onMounted, reactive, ref, useTemplateRef, watch } from 'vue'
 import { useMouseInElement } from '@vueuse/core'
-import Sobre from '@/domains/portifolio/views/components/Sobre.vue'
-import Portfolio from '@/domains/portifolio/views/components/portfolio.vue'
-import Habilidade from '@/domains/portifolio/views/components/Habilidade.vue'
-import Contatos from '@/domains/portifolio/views/components/Contatos.vue'
+import Sobre from '@/domains/portfolio/views/components/Sobre.vue'
+import Portfolio from '@/domains/portfolio/views/components/portfolio.vue'
+import Habilidade from '@/domains/portfolio/views/components/Habilidade.vue'
+import Contatos from '@/domains/portfolio/views/components/Contatos.vue'
 
 const store = useNavegacaoStore()
 

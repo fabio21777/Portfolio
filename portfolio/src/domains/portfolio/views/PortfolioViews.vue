@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import Page from '@/domains/portifolio/layout/Page.vue'
+import Page from '@/domains/portfolio/layout/Page.vue'
 </script>
 
 <template>
