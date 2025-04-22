@@ -42,7 +42,7 @@
           <div class="mt-8 justify-center text-center">
             <button style="background-color: var(--primary-color)"
                     class="p-button p-component text-white px-6 py-3 rounded-md flex items-center justify-center transition-colors duration-300 hover:opacity-90">
-              <span>Download CV</span>
+              <a target="_blank" :href="portfolioInfo.curriculo">Download CV</a>
               <i class="pi pi-download ml-2"></i>
             </button>
           </div>
@@ -58,9 +58,9 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
-const userNameParam = route?.params?.userName
+const userNameParam = route?.params?.userName;
 
-const portfolioInfo = getInfoPortifolio(userNameParam)
+const portfolioInfo = getInfoPortifolio(userNameParam);
 
 // Não são necessárias importações adicionais se o PrimeVue já estiver configurado no projeto
 </script>

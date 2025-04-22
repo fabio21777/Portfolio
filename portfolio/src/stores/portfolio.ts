@@ -6,6 +6,7 @@ const portifolioFabio = {
   firstName: 'Fabio',
   local: 'Belém - PA',
   fotoPerfil: '/asserts/foto-fabio.jpg',
+  curriculo: '/asserts/Curriculo-Fabio.pdf',
   portifolios: [
     {
       id: 0,
@@ -80,6 +81,7 @@ const portifolioFabricio =
     firstName: 'Fabricio',
     local: 'Belém - PA',
     fotoPerfil: '/asserts/foto-fabricio.jpg',
+    curriculo: '/asserts/Curriculo-Fabricio.pdf',
     portifolios: [
       {
         id: 0,
