@@ -58,7 +58,7 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
-const userNameParam = route.params.userName
+const userNameParam = route?.params?.userName
 
 const portfolioInfo = getInfoPortifolio(userNameParam)
 

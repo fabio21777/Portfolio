@@ -53,7 +53,7 @@ const navegacao = useNavegacaoStore();
 
 const route = useRoute();
 
-const userNameParam = route.params.userName;
+const userNameParam = route?.params?.userName;
 
 const portfolioInfo = getInfoPortifolio(userNameParam);
 // Você pode adicionar lógica adicional aqui se necessário

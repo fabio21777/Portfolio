@@ -24,16 +24,11 @@ const router = createRouter({
     },
     {
       path: '/:pathMatch(.*)*',
-      redirect: { name: 'portifolio' }
-    },
-    {
-      path: '/portfolio',
-      name: 'portfolio',
-      component: () => import('../domains/portfolio/views/PortfolioViews.vue'),
+      redirect: { name: 'portfolio' }
     },
     {
       path: '/portfolio/:userName',
-      name: 'portifolioUser',
+      name: 'portfolioUser',
       component: () => import('../domains/portfolio/views/PortfolioViews.vue'),
     },
     {

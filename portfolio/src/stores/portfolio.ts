@@ -12,7 +12,7 @@ const portifolioFabio = {
       title: 'Portifólio',
       description: 'Portifólio desenvolvido com Vue 3, TypeScript e Pinia.',
       demoLink: 'https://github.com/fabio21777/Portfolio',
-      hasImage: false,
+      hasImage: false
     },
     {
       id: 1,
@@ -86,7 +86,7 @@ const portifolioFabricio =
         title: 'Portifólio',
         description: 'Portifólio desenvolvido com Vue 3, TypeScript e Pinia.',
         demoLink: 'https://github.com/fabio21777/Portfolio',
-        hasImage: false,
+        hasImage: false
       },
       {
         id: 1,
@@ -140,22 +140,34 @@ const portifolioFabricio =
         image2: '/asserts/repositories.png',
         demoLink: 'https://github.com/fabriciosouza21',
         hasImage: false
-      },
+      }
 
     ]
   }
 
-  let userNameGlobal :string | null = null;
+let userNameGlobal: string | null = null
 
-  export const getInfoPortifolio = (userName: string | undefined |string[]) : any => {
-  if((userName === undefined || userName === null || userName === '') && userNameGlobal == null ) {
-    // escolher um portifólio padrão
-     userNameGlobal = Math.random() > 0.5 ? 'fabriciosouza21': 'fabio21777';
+export const getInfoPortifolio = (userName?: string | string[]): PortfolioType => {
+  // Se um nome de usuário foi fornecido, salva no localStorage
+  if (userName) {
+    localStorage.setItem('userName', String(userName));
   }
 
-  if(userNameGlobal !== null && (userName === undefined || userName === null || userName === '') ) {
-    userName = userNameGlobal;
+  // Se nenhum nome de usuário foi fornecido ou é inválido
+  if (!userName && !userNameGlobal) {
+    // Tenta recuperar do localStorage
+    const storedUserName = localStorage.getItem('userName');
+
+    if (storedUserName) {
+      userName = storedUserName;
+    } else {
+      // Escolhe um portfólio padrão aleatoriamente
+      userName = Math.random() > 0.5 ? 'fabriciosouza21' : 'fabio21777';
+    }
+
+    userNameGlobal = String(userName);
   }
 
-    return userName === 'fabriciosouza21' ? portifolioFabricio : portifolioFabio;
-  }
+  // Retorna o portfólio correspondente
+  return userName === 'fabriciosouza21' ? portifolioFabricio : portifolioFabio;
+};
