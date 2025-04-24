@@ -37,7 +37,7 @@ Este projeto é um portfólio digital que demonstra habilidades e competências 
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/portfolio.git
+git clone https://github.com/fabio21777/Portfolio.git
 cd portfolio
 ```
 
@@ -99,6 +99,6 @@ Este projeto está licenciado sob a [MIT License](LICENSE)
 
 ## 📬 Contato
 
-Seu Nome - [seu-email@exemplo.com](mailto:seu-email@exemplo.com)
+Seu Nome - [fabiosouza21777@gmail.com](mailto:fabiosouza21777@gmail.com)
 
-Projeto Link: [https://github.com/seu-usuario/portfolio](https://github.com/seu-usuario/portfolio)
+Projeto Link: https://portfolio.fsm21777.com/portfolio/fabio21777
