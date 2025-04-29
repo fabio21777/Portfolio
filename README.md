@@ -99,6 +99,6 @@ Este projeto está licenciado sob a [MIT License](LICENSE)
 
 ## 📬 Contato
 
-Seu Nome - [fabiosouza21777@gmail.com](mailto:fabiosouza21777@gmail.com)
+[fabiosouza21777@gmail.com](mailto:fabiosouza21777@gmail.com)
 
-Projeto Link: https://portfolio.fsm21777.com/portfolio/fabio21777
+https://portfolio.fsm21777.com/portfolio/fabio21777
