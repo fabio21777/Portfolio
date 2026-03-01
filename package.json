@@ -1,0 +1,15 @@
+{
+    "name": "portfolio-monorepo",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "dev:csr": "npm run dev -w portfolio-csr",
+        "dev:ssr": "npm run dev -w portfolio-ssr",
+        "build:csr": "npm run build -w portfolio-csr",
+        "build:ssr": "npm run build -w portfolio-ssr",
+        "build:all": "npm run build --workspaces"
+    }
+}
