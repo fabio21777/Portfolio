@@ -112,7 +112,7 @@ const items = ref([
     command: handleMenuClick
   },
   {
-    label: 'Portfólio',
+    label: 'GitHub',
     command: handleMenuClick
   },
   {

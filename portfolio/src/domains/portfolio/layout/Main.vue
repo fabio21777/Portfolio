@@ -4,7 +4,7 @@ import { useNavegacaoStore } from '@/stores/navegacao.js'
 import { onMounted, reactive, ref, useTemplateRef, watch } from 'vue'
 import { useMouseInElement } from '@vueuse/core'
 import Sobre from '@/domains/portfolio/views/components/Sobre.vue'
-import Portfolio from '@/domains/portfolio/views/components/portfolio.vue'
+import Github from '@/domains/portfolio/views/components/Github.vue'
 import Habilidade from '@/domains/portfolio/views/components/Habilidade.vue'
 import Contatos from '@/domains/portfolio/views/components/Contatos.vue'
 
@@ -22,8 +22,8 @@ const mouseSobre = reactive(useMouseInElement(targetSobre))
 const targetHabilidades = useTemplateRef<HTMLElement>('habilidades')
 const mouseHabilidades = reactive(useMouseInElement(targetHabilidades))
 
-const targetPortifolio = useTemplateRef<HTMLElement>('portifolio')
-const mousePortifolio = reactive(useMouseInElement(targetPortifolio))
+const targetGithub = useTemplateRef<HTMLElement>('github')
+const mouseGithub = reactive(useMouseInElement(targetGithub))
 
 const targetContato = useTemplateRef<HTMLElement>('contato')
 const mouseContato = reactive(useMouseInElement(targetContato))
@@ -34,7 +34,7 @@ const sections = [
   { name: 'home', mouse: mouseHome, index: 0,target: targetHome },
   { name: 'sobre', mouse: mouseSobre, index: 1, target: targetSobre },
   { name: 'habilidades', mouse: mouseHabilidades, index: 2, target: targetHabilidades },
-  { name: 'portifolio', mouse: mousePortifolio, index: 3, target: targetPortifolio },
+  { name: 'github', mouse: mouseGithub, index: 3, target: targetGithub },
   { name: 'contato', mouse: mouseContato, index: 4, target: targetContato }
 ]
 
@@ -68,7 +68,7 @@ const configurarObservadorRolagem = () => {
     // Define um timeout para detectar quando a rolagem parou
     timeoutId = setTimeout(() => {
       isProgrammaticScrolling.value = false
-    }, 50) // Espera 500ms depois da última rolagem
+    }, 50) // Espera 50ms depois da última rolagem
   })
 }
 
@@ -115,7 +115,7 @@ watch(() => store.currentIndex, (novoIndice) => {
       rolarParaSecao('#habilidades')
       break
     case 3:
-      rolarParaSecao('#portifolio')
+      rolarParaSecao('#github')
       break
     case 4:
       rolarParaSecao('#contato')
@@ -140,9 +140,9 @@ watch(() => store.currentIndex, (novoIndice) => {
     <section id="habilidades" ref="habilidades" class="min-h-screen flex items-center py-16">
       <Habilidade v-motion-slide-visible-once-left ></Habilidade>
     </section>
-    <!-- Seção Portifólio -->
-    <section id="portifolio" ref="portifolio" class="flex items-center py-16">
-      <Portfolio v-motion-slide-visible-once-left></Portfolio>
+    <!-- Seção GitHub -->
+    <section id="github" ref="github" class="flex items-center py-16">
+      <Github v-motion-slide-visible-once-left></Github>
     </section>
     <section id="contato" ref="contato" class="flex items-center py-16">
       <Contatos v-motion-slide-visible-once-left></Contatos>

@@ -22,18 +22,20 @@
               página final disponibilizada para o usuário.
             </p>
             <p class="mb-4">
-              Trazendo para o presente, eu tenho o prazer
-              de trabalhar em uma <span class="font-semibold">Consultoria</span> sensacional!
-              Meu foco atual é desenvolver aplicações, sites
-              responsivos, acessibilidade, interfaces gráficas
-              e aplicações web, atuando no backend e front-end.
+              Trazendo para o presente, com 5 anos de estrada, atuo em uma consultoria de
+              software com foco em <span class="font-semibold">desenvolvimento agentico com IA</span>.
+              Opero harnesses como OpenCode e Claude Code, domino modelos de linguagem
+              (GLM, Claude, Kimi, OpenAI) e engenharia de contexto: injeção sob demanda via skills,
+              subagentes, handoffs, loops de agentes adversariais e gestão de janela de contexto.
+              Aplico isso tanto no meu fluxo de desenvolvimento quanto na construção de sistemas
+              inteligentes integrados a backends Java/Spring.
             </p>
           </div>
 
           <!-- Estatísticas -->
           <div class="flex flex-wrap justify-center gap-4">
             <div class="text-center">
-              <h2 class="text-2xl font-bold"><span style="color: var(--primary-color)">+</span>3</h2>
+              <h2 class="text-2xl font-bold"><span style="color: var(--primary-color)">+</span>5</h2>
               <p>Anos de experiência</p>
             </div>
           </div>

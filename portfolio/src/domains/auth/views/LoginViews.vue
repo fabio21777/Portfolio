@@ -84,6 +84,6 @@ const onSubmit = handleSubmit((values) => {
   font-size: 0.875rem; /* Define o tamanho do texto de erro como menor */
 }
 .background{
-  background-image: url('/asserts/background.png');
+  background-image: url('/assets/background.png');
 }
 </style>
